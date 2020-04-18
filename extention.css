@@ -52,7 +52,7 @@
 }
 
 .trainer-table td.aud {
-  width: 10%
+  width: 10%;
 }
 
 .trainer-table td.eng-aud {
@@ -81,21 +81,25 @@
   background: var(--background-primary);
 }
 
-
 .trainer-table td.eng.freqword {
-  font-size: 28px;
-  text-transform: capitalize;
-  padding-top: 56px;
-  line-height: 28px;
+  vertical-align: bottom;
+  padding-top: 60px;
 }
 
-.trainer-table td.rus.freqword .rich {
-  margin-top: -16px
+.trainer-table td.eng.freqword * {
+  font-size: 28px;
+  text-transform: capitalize;
+  line-height: 28px;
 }
 
 .trainer-table td.rus.freqword {
   text-transform: capitalize;
-  padding-bottom: 60px;
+  height: auto;
+  padding-bottom: 70px;
+}
+
+.trainer-table td.rus.freqword .rich {
+  margin-top: -16px;
 }
 
 .trainer-table td.comment.freqword {
@@ -122,7 +126,7 @@
   justify-content: space-around;
   align-items: baseline;
   color: #fff;
-  padding: 10px 0px;
+  padding: 20px 0px;
   --matter-primary-rgb: 97, 101, 255;
   --matter-onsurface-rgb: 52, 40, 105;
   --matter-font-family: 'Open Sans';
@@ -139,7 +143,7 @@
 }
 
 .trainer-table .ttitle:before {
-  content: "Some text. Table Heading"
+  content: "Таблица слов"
 }
 
 .trainer-table .matter-button-text {
@@ -154,21 +158,39 @@
   margin: 0;
 }
 
+.trainer-table .aud-inline {
+  display: none;
+  margin-top: 4px; 
+}
+
 .trainer-table td.aud {
   white-space: nowrap;
+} 
+
+@media only screen and (max-width: 766px) {
+  .trainer-table .aud-inline {
+    display: block;
+  }
+
+  .trainer-table td.aud {
+    display: none;
+  }
+  .trainer-table .ttitle {
+    display: none;
+  }
 }
 
 .trainer-table .play-btn {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   white-space: normal;
   background: var(--accent-primary);
   border-radius: 50%;
   color: #fff;
   text-align: center;
   font-size: 11px;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 .trainer-table .play-btn.slow {
@@ -179,7 +201,5 @@
   border: 2px solid var(--accent-primary);
   background: none;
   color: var(--accent-primary);
-  width: 24px;
-  height: 24px;
-  line-height: 20px;
+  line-height: 21px;
 }
