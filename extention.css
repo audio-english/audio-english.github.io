@@ -1,0 +1,185 @@
+:root {
+  --accent-primary: #6165ff;
+  --accent-light: #9DA3F7;
+  --background-primary: #f7f7f7;
+  --background-darker: #f2f2f2;
+  --border-color: #e9e9e9; 
+  --border-color-dark: #d7dadb; 
+  --text-color-dark: #342869;
+}
+
+.lecture-content {
+  background: var(--background-primary);
+}
+
+.course-sidebar {
+  background: var(--background-darker);
+}
+
+.title-container {
+  border: none !important;
+}
+
+.section-list li.section-item[id] {
+  border: none !important;
+}
+
+.section-title {
+  background: transparent !important;
+  border: none !important;
+}
+
+.trainer-table {
+  width: 100%;
+  position: relative;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.trainer-table td {
+  padding: 8px 12px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.trainer-table td.rus {
+  height: 100%;
+}
+
+.trainer-table td.rus,
+.trainer-table td.eng {
+  width: 30%;
+}
+
+.trainer-table td.aud {
+  width: 10%
+}
+
+.trainer-table td.eng-aud {
+  text-align: end;
+}
+
+
+.hide-text * {
+  color: transparent !important;
+}
+
+.trainer-table tr.entry-row {
+  border: solid #e9e9e9;
+  border-width: 0px 1px;
+  background: #fff;
+}
+
+.trainer-table tr.entry-bottom-row,
+.trainer-table td.comment {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.trainer-table tr.freqword {
+  border-left: none;
+  border-right: none;
+  background: var(--background-primary);
+}
+
+
+.trainer-table td.eng.freqword {
+  font-size: 28px;
+  text-transform: capitalize;
+  padding-top: 56px;
+  line-height: 28px;
+}
+
+.trainer-table td.rus.freqword .rich {
+  margin-top: -16px
+}
+
+.trainer-table td.rus.freqword {
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+
+.trainer-table td.comment.freqword {
+    vertical-align: middle;
+}
+
+.trainer-table td.eng-aud.freqword {
+  vertical-align: bottom;
+}
+
+.trainer-table th {
+  color: #fff;
+  position: sticky;
+  top: 43px;
+}
+
+.trainer-table .tcontrols {
+  border-width: 0 0 1px;
+  border-color: var(--border-color);
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--background-primary);
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  color: #fff;
+  padding: 10px 0px;
+  --matter-primary-rgb: 97, 101, 255;
+  --matter-onsurface-rgb: 52, 40, 105;
+  --matter-font-family: 'Open Sans';
+}
+
+.trainer-table .ttitle {
+  margin: 0;
+  flex-grow: 2;
+}
+
+.trainer-table .matter-switch {
+  margin: 0 4px;
+  font-weight: 500;
+}
+
+.trainer-table .ttitle:before {
+  content: "Some text. Table Heading"
+}
+
+.trainer-table .matter-button-text {
+  text-transform: uppercase;
+}
+
+.trainer-table .rich {
+  white-space: pre-line;
+}
+
+.trainer-table .rich p {
+  margin: 0;
+}
+
+.trainer-table td.aud {
+  white-space: nowrap;
+}
+
+.trainer-table .play-btn {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  white-space: normal;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+.trainer-table .play-btn.slow {
+  background: var(--accent-light)
+}
+
+.trainer-table .freqword .play-btn {
+  border: 2px solid var(--accent-primary);
+  background: none;
+  color: var(--accent-primary);
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+}
