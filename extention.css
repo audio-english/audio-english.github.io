@@ -94,17 +94,3 @@
   line-height: 24px;
 }
 
-/* remove when exported */
-
-.selected-row {
-  opacity: 0.4;
-}
-
-.page-link {
-  min-width: 100px;
-}
-
-body {
-  font-family: 'Open Sans';
-}
-
