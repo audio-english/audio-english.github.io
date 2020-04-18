@@ -1,0 +1,110 @@
+:root {
+  --accent-primary: #24bd85;
+}
+
+.lecture-content {
+  background: #f7f7f7;
+}
+
+.trainer-table {
+  width: 100%;
+  position: relative;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.trainer-table td {
+  padding: 8px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.trainer-table td.rus {
+  height: 100%;
+}
+
+.trainer-table td.rus,
+.trainer-table td.eng {
+  width: 35%;
+}
+
+.hide-text * {
+  color: transparent !important;
+}
+
+.trainer-table tr.entry-row {
+  border: solid #e9e9e9;
+  border-width: 0px 1px;
+}
+
+.trainer-table tr.entry-bottom-row,
+.trainer-table td.comment {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.trainer-table tr.freqword {
+  background: #fff;
+}
+
+.trainer-table th {
+  color: #fff;
+  position: sticky;
+  top: 43px;
+}
+
+.trainer-table .tcontrols {
+  border-width: 1px 1px 1px 0px;
+  border-color: #e9e9e9;
+  border-radius: 8px 8px 0px 0px;
+  border-style: solid;
+  background-color: var(--accent-primary);
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+
+  --matter-primary-rgb: 255, 255, 255;
+  --matter-onsurface-rgb: 255, 255, 255;
+  --matter-font-family: 'Open Sans';
+}
+
+.trainer-table .matter-button-text {
+  text-transform: uppercase;
+}
+
+.trainer-table .rich {
+  white-space: pre-line;
+}
+
+.trainer-table td.aud {
+  white-space: nowrap;
+}
+
+.trainer-table .play-btn {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  white-space: normal;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+/* remove when exported */
+
+.selected-row {
+  opacity: 0.4;
+}
+
+.page-link {
+  min-width: 100px;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
