@@ -203,3 +203,8 @@
   color: var(--accent-primary);
   line-height: 21px;
 }
+
+play-btn {
+  width: 25px;
+  height: 25px;
+}
