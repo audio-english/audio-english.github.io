@@ -1,0 +1,48 @@
+play-btn {
+  cursor: pointer;
+}
+
+play-btn .play-btn__bgr {
+  stroke: var(--accent-primary);
+  stroke-width: 2;
+  fill: none;
+}
+
+play-btn .play-btn__play {
+  fill: var(--accent-primary);
+}
+
+play-btn .play-btn__pause {
+  fill: var(--accent-primary);
+  visibility: hidden;
+}
+
+play-btn[playing] .play-btn__pause,
+play-btn[loading] .play-btn__pause {
+  visibility: visible;
+}
+
+play-btn[playing] .play-btn__play,
+play-btn[loading] .play-btn__play {
+  visibility: hidden;
+}
+
+play-btn[loading] .play-btn__bgr {
+  stroke-dasharray: 0, 100;
+  animation: dash 1.5s ease-in-out infinite, rotate 2s linear infinite;
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dasharray: 100, 100;
+    stroke-dashoffset: -71.5;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

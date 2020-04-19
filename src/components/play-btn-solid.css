@@ -1,0 +1,12 @@
+play-btn.solid .play-btn__bgr {
+  fill: var(--accent-primary);
+  stroke-width: 0;
+}
+
+play-btn.solid .play-btn__play {
+  fill: #fff;
+}
+
+play-btn.solid .play-btn__pause {
+  fill: #fff;
+}
