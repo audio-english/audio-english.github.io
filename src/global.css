@@ -204,7 +204,21 @@
   line-height: 21px;
 }
 
-play-btn {
+.trainer-table play-btn {
   width: 25px;
   height: 25px;
+}
+
+.trainer-table h3 {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-color-dark);
+  line-height: 33px;
+  text-align: start;
+}
+
+.trainer-table .row-id {
+  display: none;
 }
