@@ -87,6 +87,7 @@
   padding-top: 60px;
 }
 
+.trainer-table td.eng.freqword,
 .trainer-table td.eng.freqword * {
   font-size: 28px !important;
   text-transform: capitalize;
@@ -150,6 +151,7 @@
   text-transform: uppercase;
 }
 
+.trainer-table .rich,
 .trainer-table .rich * {
   white-space: pre-line;
   margin: 0;
