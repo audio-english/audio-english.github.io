@@ -1,8 +1,6 @@
 import $ from 'jquery';
 import PlayBtn from './components/play-btn'
 import './global.css'
-import './components/play-btn-solid.css'
-import './components/play-btn-slow.css'
 
 $(document).ready(function(e) {
   $("#rushow").change(function() {

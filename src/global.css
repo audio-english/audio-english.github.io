@@ -120,7 +120,6 @@
 .trainer-table .tcontrols {
   border-width: 0 0 1px;
   border-color: var(--border-color);
-  border-radius: 8px 8px 0px 0px;
   background-color: var(--background-primary);
   border-style: solid;
   display: flex;
@@ -205,9 +204,29 @@
   line-height: 21px;
 }
 
-.trainer-table play-btn {
+play-btn {
   width: 25px;
   height: 25px;
+
+  --play-btn-stroke: var(--accent-primary);
+  --play-btn-color: var(--accent-primary);
+}
+
+play-btn.solid {
+  --play-btn-stroke: var(--accent-focus);
+  --play-btn-fill: var(--accent-primary);
+  --play-btn-color: #fff;
+}
+
+play-btn.solid.slow {
+  --play-btn-stroke: var(--accent-primary);
+  --play-btn-fill: var(--accent-light);
+  --play-btn-color: #fff;
+}
+
+play-btn.solid[progress='1'],
+play-btn.solid:not([progress]):not([loading]) {
+  --play-btn-stroke-width: 0;
 }
 
 .trainer-table h3 {
