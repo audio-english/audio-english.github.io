@@ -150,12 +150,11 @@
   text-transform: uppercase;
 }
 
-.trainer-table .rich {
+.trainer-table .rich * {
   white-space: pre-line;
-}
-
-.trainer-table .rich p {
   margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 17px !important;
 }
 
 .trainer-table .aud-inline {
