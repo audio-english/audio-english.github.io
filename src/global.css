@@ -88,7 +88,7 @@
 }
 
 .trainer-table td.eng.freqword * {
-  font-size: 28px;
+  font-size: 28px !important;
   text-transform: capitalize;
   line-height: 28px;
 }
