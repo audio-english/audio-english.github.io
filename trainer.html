@@ -146,7 +146,11 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
       renderEntries(map[$(this).text()])
     });
 
-    renderEntries(map[Object.keys(map)[0]])
+    if (window.location.hash) {
+      renderEntries(map[window.location.hash.substr(1)])
+    } else {
+      renderEntries(map[Object.keys(map)[0]])
+    }
   });
 
   function renderEntries(entries) {
