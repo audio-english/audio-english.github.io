@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="./dist/bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
@@ -53,22 +52,25 @@
             <th colspan="3">
                 <div class="tcontrols">
                     <h3 class="ttitle"></h3>
-                    <div>
-                        <label class="matter-switch">
-                            <input id="enshow" type="checkbox" role="switch" checked>
-                            <span>English</span>
+                    <div class="switch">
+                        <label>
+                            English
+                            <input type="checkbox" id="enshow" checked>
+                            <span class="lever"></span>
                         </label>
                     </div>
-                    <div>
-                        <label class="matter-switch">
-                            <input id="rushow" type="checkbox" role="switch" checked>
-                            <span>Русский</span>
+                    <div class="switch">
+                        <label>
+                            Русский
+                            <input type="checkbox" id="rushow" checked>
+                            <span class="lever"></span>
                         </label>
                     </div>
-                    <div>
-                        <label class="matter-switch">
-                            <input id="comshow" type="checkbox" role="switch" checked>
-                            <span>Комментарии</span>
+                    <div class="switch">
+                        <label>
+                            Комментарии
+                            <input type="checkbox" id="comshow" checked>
+                            <span class="lever"></span>
                         </label>
                     </div>
                 </div>

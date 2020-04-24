@@ -138,9 +138,25 @@
   flex-grow: 2;
 }
 
-.trainer-table .matter-switch {
-  margin: 0 4px;
+.trainer-table .switch label input[type=checkbox]:checked+.lever:after {
+  background-color: var(--accent-primary) !important;
+}
+.trainer-table .switch label input[type=checkbox]:checked+.lever {
+  background-color: var(--accent-light) !important;
+}
+
+.trainer-table .switch {
+  text-align: center;
+}
+
+.trainer-table .switch label {
   font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.trainer-table .switch label .lever {
+  margin: 0 12px 0 0;
 }
 
 .trainer-table .ttitle:before {
@@ -182,9 +198,15 @@
   .trainer-table td.aud {
     display: none;
   }
+
   .trainer-table .ttitle {
     display: none;
   }
+
+  .trainer-table .switch label .lever {
+    margin: 4px 0;
+  }
+
 }
 
 .trainer-table .play-btn {

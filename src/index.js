@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import PlayBtn from './components/play-btn'
 import './global.css'
+import 'materialize-css/dist/css/materialize.min.css'
 
 $(document).ready(function(e) {
   $("#rushow").change(function() {
