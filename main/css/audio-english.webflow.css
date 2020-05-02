@@ -1721,8 +1721,8 @@ blockquote {
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .accordion-item-trigger {
@@ -2776,6 +2776,15 @@ blockquote {
   align-items: stretch;
 }
 
+.text-block-20-copy {
+  display: none;
+  max-width: 200px;
+  margin-top: 12px;
+  color: #9596ac;
+  font-size: 12px;
+  text-align: center;
+}
+
 html.w-mod-js *[data-ix="hide-faq-answer"] {
   display: none;
   opacity: 0;
@@ -3160,6 +3169,11 @@ html.w-mod-js *[data-ix="hide-fixed-top-bar"] {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
   }
   .logo-wrap-c1 {
     margin-bottom: 50px;
@@ -3194,6 +3208,10 @@ html.w-mod-js *[data-ix="hide-fixed-top-bar"] {
   .card_col_2 {
     width: 100%;
     padding-left: 0px;
+  }
+  .accordion-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .accordion-item-content {
     margin-right: 0px;
