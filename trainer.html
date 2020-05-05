@@ -227,11 +227,13 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
   function renderPlayer(entry) {
     const isFreqWord = entry.gsx$freqdic && entry.gsx$freqdic.$t === 'TRUE';
     let result = '';
-    if (text(entry, 'a1')) {
-      result += `<play-btn class="${!isFreqWord ? 'solid' : ''}" src="${text(entry, 'a1')}"></play-btn> `
+    let a1 = text(entry, 'na1') || text(entry, 'a1');
+    if (a1) {
+      result += `<play-btn class="${!isFreqWord ? 'solid' : ''}" src="${a1}"></play-btn> `
     }
-    if (text(entry, 'a2')) {
-      result += `<play-btn class="solid slow" src="${text(entry, 'a2')}"></play-btn>`
+    let a2 = text(entry, 'na2') || text(entry, 'a2');
+    if (a2) {
+      result += `<play-btn class="solid slow" src="${a2}"></play-btn>`
     }
     return result;
   }
