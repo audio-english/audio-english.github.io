@@ -30,6 +30,10 @@
   border: none !important;
 }
 
+.course-list .col-lg-12 {
+  padding: 0;
+}
+
 .trainer-table {
   width: 100%;
   position: relative;
