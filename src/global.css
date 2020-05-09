@@ -64,11 +64,6 @@
   text-align: end;
 }
 
-
-.hide-text * {
-  color: transparent !important;
-}
-
 .trainer-table tr.entry-row {
   border: solid #e9e9e9;
   border-width: 0px 1px;
