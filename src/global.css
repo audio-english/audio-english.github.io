@@ -9,6 +9,10 @@
   --text-color-dark: #342869;
 }
 
+b, strong {
+  font-weight: bolder;
+}
+
 .lecture-content {
   background: var(--background-primary);
 }
@@ -32,6 +36,15 @@
 
 .course-list .col-lg-12 {
   padding: 0;
+}
+
+.btn {
+  height: auto;
+  line-height: normal;
+}
+
+.course-directory .btn {
+  box-shadow: none;
 }
 
 .trainer-table {
