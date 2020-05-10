@@ -39,8 +39,8 @@ b, strong {
 }
 
 .btn {
-  height: auto;
-  line-height: normal;
+  height: auto !important;
+  line-height: normal !important;
 }
 
 .course-directory .btn {
