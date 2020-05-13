@@ -66,7 +66,7 @@ b, strong {
 
 .trainer-table td.rus,
 .trainer-table td.eng {
-  width: 30%;
+  width: 40%;
 }
 
 .trainer-table td.aud {
@@ -173,7 +173,7 @@ b, strong {
 }
 
 .trainer-table .ttitle:before {
-  content: "Таблица слов"
+  content: "Разговорный тренажер"
 }
 
 .trainer-table .matter-button-text {
