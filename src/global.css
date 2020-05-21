@@ -54,6 +54,10 @@ b, strong {
   border-collapse: collapse;
 }
 
+.trainer-table a {
+  text-decoration: underline;
+}
+
 .trainer-table td {
   padding: 8px 12px;
   cursor: pointer;
