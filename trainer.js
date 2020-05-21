@@ -38,8 +38,9 @@ function exportRows(all) {
             if (e.ctrlKey || e.metaKey) return;
             $(this).toggleClass('hide-text')
         });
-        $('a').click(function() {
-            $(this).attr('target', '_blank');
+        $('.trainer-table a').click(function() {
+            window.open($(this).attr('href'), '_blank');
+            return false;
         });
     </script>`;
   $('#export-dialog textarea').val(fullHtml).select();
