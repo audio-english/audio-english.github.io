@@ -288,3 +288,7 @@ play-btn.solid:not([progress]):not([loading]) {
 .trainer-table .row-id {
   display: none;
 }
+
+.already-enrolled {
+  visibility: hidden !important;
+}
