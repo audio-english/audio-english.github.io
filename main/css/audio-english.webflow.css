@@ -2544,6 +2544,7 @@ blockquote {
 }
 
 .section-pricing {
+  display: none;
   padding-top: 40px;
 }
 
