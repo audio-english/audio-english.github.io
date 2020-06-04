@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Jun 04 2020 05:00:11 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jun 04 2020 09:32:17 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5d652254437276b2f0407609" data-wf-site="5d34de47776868b9145261e7">
 <head>
   <meta charset="utf-8">
@@ -32,13 +32,6 @@
       myAudio.pause();
     }
   } 
-</script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66545964-4"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-66545964-4', { 'optimize_id': 'GTM-WC6F49J'});
 </script>
   <style>
     .w-slider-dot {background: #e9edfe;}
@@ -1019,7 +1012,7 @@ $('.quiz-word').click(function(e) {
   }, 1500)
 })
 $('.signup-trigger').click(function(e) {
-  window.open("https://learn.audio-english.ru/courses/2f97fc/lectures/15660610", "_parent");
+	window.open("https://learn.audio-english.ru/courses/2f97fc/lectures/15660610", "_parent");
 //	document.querySelector('#pricing').scrollIntoView({ 
 //  	behavior: 'smooth' 
 //	});
@@ -1028,12 +1021,12 @@ $('.signup-trigger').click(function(e) {
 //    'event_label': this.id,
 //	});
 })
-$('.buy-trigger').click(function(e) {
-	  gtag('event', 'click', {
-    	'event_category': 'purchase',
-    	'event_label': this.id,
-		});
-})
+//$('.buy-trigger').click(function(e) {
+//	  gtag('event', 'click', {
+//    	'event_category': 'purchase',
+//    	'event_label': this.id,
+//		});
+//})
 $('.correct-word').click(function(e) {
 	window.numCorrectWords = window.numCorrectWords + 1 || 1
   if (window.numCorrectWords > 2) {
